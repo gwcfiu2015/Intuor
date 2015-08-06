@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Upload Notes</title>
+    
+    <link rel="icon" type="image/png" href="favicon.ico">
+    
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+     <script type="text/javascript" ></script>
+    
+<script type="text/javascript"> 
+    
+    Parse.initialize("eeeWEWcIQKIWVpCRHuK3erSkesvi4XXjk8HP8gHH", "P6vD3bcCwFvBUquCasWi2psuMktrfb3chcto8foe");
+    
+    var user = Parse.User.current();
+    
+//    if (user) 
+//    {
+//        alert("You are logged in.");
+//    
+//    } 
+//    else 
+//    {
+//        alert("You are not logged in. Files will not be saved.");
+//    // show the signup or login page
+//    }
+//    
+    
+    
+    function loadImage() 
+    {
+//        alert("inside load image");
+        var fileUploadControl = $("#uploadInput")[0];
+            if (fileUploadControl.files.length > 0) 
+            {
+                var file = fileUploadControl.files[0];
+                var name = "photo.jpg";
+                var parseFile = new Parse.File(name, file);
+                
+                //stuff below was just added!!!!
+                
+                file.set("image", name);
+                file.set("user", user);
+            }
+        
+         //you can even associate a file to a user
+    user.set("userFile", parseFile);  
+        
+    user.save();
+        
+    }
+    
+    function displayNotes()
+    {
+        var user = Parse.User.current();
+        var profilePhoto = user.get("userFile");
+        alert(profilePhoto.url());
+        var img = document.createElement("IMG");
+        img.src = profilePhoto.url();
+        document.getElementById('notes').appendChild(img);
+        //stuff below was just added!!!!
+        file.get();
+       
+    }
+    
+    
+    function newNote()
+    {
+        // 1. Create a "Comment" subclass of Parse.Object
+        var Note = Parse.Object.extend("Note");
+        // 2. Create a new instance of this subclass
+        var Note = new Note();
+        // 3. Add some data 
+        myNote.set('image', file);
+        myNote.set('user', Parse.User.current() );
+        // 4. Save your new comment!
+        myNote.save();
+        
+       
+    }
+
+    
+    
+    
+</script>
+</head>
+
+    
+<nav>
+  <ul>
+    <li>
+        <a href="SelectionPage.html">Home</a>
+    </li>
+    <li>
+        <a href="ParsePlatform-Todo-de97987/index.html">My Profile</a>
+    </li>
+    <li>
+        <a href="aboutUs.html">About Us</a>
+    </li>
+    <li>
+        <a href="contactUs.html">Contact Us</a>
+    </li>
+    <li>
+        <a href="">Sign Out</a>
+    </li>
+    
+  </ul>
+             <br><br><br>
+            
+            
+</nav>
+
+    
+    <script type="text/javascript" src="parse.js"></script>
+    <div id="objectList"></div>
+    <form>
+    
+    <br><br><br>
+    <input type="file" id="uploadInput" name = "uploadInput" />
+    <input type="button" id="run" name="run" value="Display All Images" onclick="signUpUser()"/>
+    
+    </form>
+    
+    <br><br><br><br>
+    <br><br><br>
+    <div id="notes"></div>
+    <a href='ParsePlatform-Todo-de97987/index.html' class='button'>Back</a>
+    
+   
+</html>

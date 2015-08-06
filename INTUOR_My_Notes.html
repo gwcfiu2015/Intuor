@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>InTuor</title>
+     <link href="INTUOR_My_Notes.css" rel="stylesheet" style="text/css" />
+    <link href="stylesheet.css" rel="stylesheet" style="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href="animate.css" rel="stylesheet" style="text/css" />
+    
+    <link rel="icon" type="image/png" href="favicon.ico">
+    
+    <script type="text/javascript">
+
+        function displayText()
+        {
+           var inputStr = document.getElementById("userTxtInput").value;
+           document.getElementById("userTxtDisplay").innerHTML=inputStr;
+        }
+
+        function displayImg()
+        {
+            document.getElementById("imgDisplay").innerHTML= "<img src='Talosians_3.jpg' width='300px' height='200px' />";
+        }
+
+        function clearImg()
+        {
+            document.getElementById("imgDisplay").innerHTML="";
+        }
+        </script>
+</head>
+    
+    <body background="cork1.jpg" bgproperties="fixed">
+        
+        <nav>
+  <ul>
+    <li>
+        <a href="SelectionPage.html">Home</a>
+    </li>
+    <li>
+        <a href="ParsePlatform-Todo-de97987/index.html">My Profile</a>
+    </li>
+    <li>
+        <a href="aboutUs.html">About Us</a>
+    </li>
+    <li>
+        <a href="contactUs.html">Contact Us</a>
+    </li>
+    <li>
+        <a href="">Sign Out</a>
+    </li>
+    
+  </ul>
+             <br><br><br>
+            
+            
+</nav>
+        
+        <h1>My Notes</h1>
+ 
+    <center>
+        <label for="userTxt">Enter your notes here: </label>
+        <input type="text" name="userTxtInput" id="userTxtInput" value="" size="32">
+        
+        <input type="button" name="displayBtn" value="Submit" onclick="displayText()">
+        <br><br><br>
+        <textarea name="userTxtDisplay" id="userTxtDisplay" rows="4" cols="50" >
+        Here you will see your text!
+        </textarea>
+    </center>
+
+        <p id="imgDisplay"></p>
+        <a href='../InTuorNEW/ParsePlatform-Todo-de97987/index.html' class='button'>Back</a>

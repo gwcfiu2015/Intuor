@@ -1,0 +1,281 @@
+.contactus {
+     font-family: 'Rokkitt', bold;  
+     text-align: center;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     font-size: 180px;
+     margin:0 auto;
+     text-align:justify;   
+}
+.emailus {
+    font-family: 'Rokkitt', bold;  
+     text-align: center;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     font-size: 168px;
+     margin:0 auto;
+     text-align:justify;   
+}
+
+a {
+    font-family: 'Rokkitt', bold;  
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    border-bottom-color: deepskyblue;
+    color: deepskyblue;
+}
+
+.header{
+    text-align: center;
+/*    position: absolute;*/
+    width: 100%;
+}
+
+
+#chalkboard{
+    text-align: center;   
+}
+
+.logo{
+float:inherit;
+/*position:fixed;*/
+    margin: 0px;
+    padding-bottom: auto;
+}
+
+/*
+#button{
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+ 
+}
+*/
+
+
+body {
+    background-image: url(cork1.jpg);
+    background-repeat: repeat-y;
+}
+
+ul{
+    list-style-image: url(push-pin.png);
+}
+
+#math{
+    text-align: center;
+}
+
+#list{
+     font-family: 'Rokkitt', bold;  
+     text-align: center;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     font-size: 250%;
+     width:400px;
+     margin:0 auto;
+     text-align:justify;
+    
+}
+
+h1{
+    font-family: 'Rokkitt', bold;  
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     font-size: 250%;
+     width:200px;
+     margin:0 auto;
+     text-align:left;
+}
+
+li:hover{
+    border-bottom-color: deepskyblue;
+    color: deepskyblue;
+}
+
+ 
+body {
+ 
+  width: 100%;
+    
+ 
+  max-width: 1200px;
+ 
+  margin: 0 auto;
+
+  color: white;
+}
+ 
+/* Make the nav take up the whole body width, and give it some top and bottom margin space */
+ 
+nav {
+ 
+  width: 100%;
+  margin: 20px 0; 
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Rokkitt', bold;
+  float: fixed;
+
+}
+ 
+  
+/* Make the list of links take up the whole width of the nav */
+ 
+nav ul {
+ 
+  width: 100%; }
+
+nav ul li {
+  color: white;
+  width: 20%; }
+ 
+nav ul li a {
+  color: white;
+  display: block;
+ 
+  width: 100%; }
+
+nav ul {
+ 
+  width: 100%; /* from above */
+ 
+  list-style: none;
+ 
+  margin: 0;
+ 
+  padding: 0;
+  
+}
+
+nav ul li {
+ 
+  width: 20%; /* from above */
+ 
+  float: left; }
+
+nav ul li a {
+ 
+  text-align: center;
+ 
+  padding: 15px 0;
+ 
+  display: block;
+ 
+  width: 100%;
+ 
+  background: #cdeb8e; /* Old browsers */
+ 
+  background: -moz-linear-gradient(top, #cdeb8e 0%, #b0ca34 100%); /* FF3.6+ */
+ 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#b0ca34)); /* Chrome,Safari4+ */
+ 
+  background: -webkit-linear-gradient(top, #cdeb8e 0%,#b0ca34 100%); /* Chrome10+,Safari5.1+ */
+ 
+  background: -o-linear-gradient(top, #cdeb8e 0%,#b0ca34 100%); /* Opera 11.10+ */
+ 
+  background: linear-gradient(to bottom, #cdeb8e 0%,#b0ca34 100%); /* W3C standard, IE10+ */
+ 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#b0ca34',GradientType=0 ); /* IE6-9 */
+ 
+  }
+
+nav ul li a:hover {
+ 
+  background: #b0ca34; /* Old browsers */
+ 
+  background: -moz-linear-gradient(top, #b0ca34 0%, #96c40d 100%); /* FF3.6+ */
+ 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0ca34), color-stop(100%,#96c40d)); /* Chrome,Safari4+ */
+ 
+  background: -webkit-linear-gradient(top, #b0ca34 0%,#96c40d 100%); /* Chrome10+,Safari5.1+ */
+ 
+  background: -o-linear-gradient(top, #b0ca34 0%,#96c40d 100%); /* Opera 11.10+ */
+ 
+  background: linear-gradient(to bottom, #b0ca34 0%,#96c40d 100%); /* W3C standard, IE10+ */
+ 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0ca34', endColorstr='#96c40d',GradientType=0 ); /* IE6-9 */
+ 
+  }
+
+nav ul li a,
+ 
+nav ul li a:focus,
+ 
+nav ul li a:visited,
+ 
+nav ul li a:hover,
+ 
+nav ul li a:active {
+ 
+  color: floralwhite;
+ 
+  text-decoration: none; }
+
+nav ul li:first-child a {
+ 
+  border-top-left-radius: 8px;
+ 
+  border-bottom-left-radius: 8px; }
+ 
+nav ul li:last-child a {
+ 
+  border-top-right-radius: 8px;
+ 
+  border-bottom-right-radius: 8px; }
+
+.button {
+   border: 0px solid #0a3c59;
+   background: #225e85;
+   background: -webkit-gradient(linear, left top, left bottom, from(#42b3ff), to(#225e85));
+   background: -webkit-linear-gradient(top, #42b3ff, #225e85);
+   background: -moz-linear-gradient(top, #42b3ff, #225e85);
+   background: -ms-linear-gradient(top, #42b3ff, #225e85);
+   background: -o-linear-gradient(top, #42b3ff, #225e85);
+   background-image: -ms-linear-gradient(top, #42b3ff 0%, #225e85 100%);
+   padding: 9px 18px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #000000;
+   font-size: 24px;
+   font-family: 'Rokkitt', bold; 
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 0px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #164657;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#164657));
+   background: -webkit-linear-gradient(top, #65a9d7, #164657);
+   background: -moz-linear-gradient(top, #65a9d7, #164657);
+   background: -ms-linear-gradient(top, #65a9d7, #164657);
+   background: -o-linear-gradient(top, #65a9d7, #164657);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #164657 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 0px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#164657));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+.buttonHolder{ 
+    text-align: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Saved Notes</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+     <script type="text/javascript" ></script>
+    
+<script type="text/javascript"> 
+    
+    Parse.initialize("eeeWEWcIQKIWVpCRHuK3erSkesvi4XXjk8HP8gHH", "P6vD3bcCwFvBUquCasWi2psuMktrfb3chcto8foe");
+    
+    var user = Parse.User.current();
+    
+    if (user) 
+    {
+        alert("You are logged in.");
+    
+    } 
+    else 
+    {
+        alert("You are not logged in. Files will not be saved.");
+    // show the signup or login page
+    }
+    
+    function displayNotes()
+    {
+        var user = Parse.User.current();
+        var profilePhoto = user.get("userFile");
+        alert(profilePhoto.url());
+        var img = document.createElement("IMG");
+        img.src = profilePhoto.url();
+        document.getElementById('notes').appendChild(img);
+       
+    }
+    
+   
+    
+    
+    
+</script>
+    
+    <link rel="icon" type="image/png" href="favicon.ico">
+    
+</head>
+
+    
+<nav>
+  <ul>
+    <li>
+        <a href="SelectionPage.html">Home</a>
+    </li>
+    <li>
+        <a href="ParsePlatform-Todo-de97987/index.html">My Profile</a>
+    </li>
+    <li>
+        <a href="aboutUs.html">About Us</a>
+    </li>
+    <li>
+        <a href="contactUs.html">Contact Us</a>
+    </li>
+    <li>
+        <a href="">Sign Out</a>
+    </li>
+    
+  </ul>
+             <br><br><br>
+            
+            
+</nav>
+
+
+    <br><br><br><br>
+<!--    <input type="file" id="uploadInput" onchange="loadImage()">-->
+    <input type="button" value="Display Image" onclick="displayNotes()"/>
+    <br><br><br>
+    <div id="notes"></div>
+    <a href='uploadNotes.html' class='button'>Back</a>
+    
+    
+</html>
